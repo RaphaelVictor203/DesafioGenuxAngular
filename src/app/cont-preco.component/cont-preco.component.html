@@ -1,0 +1,22 @@
+<div style="height: 65vmin; width: 127vmin; border-radius: 2px; background-color: white">
+    <div class="cont-selecao">
+        <p class="p-sel-moeda">Selecione a moeda</p>
+        <select id="cmbMoedas">
+            <option value="BTC" (click)="atualizarItems('')">-</option>
+            <option value="BTC" (click)="atualizarItems('BTC')">BTC</option>
+            <option value="ETH" (click)="atualizarItems('ETH')">ETH</option>
+            <option value="DASH" (click)="atualizarItems('DASH')">DASH</option>    
+        </select>
+    </div>
+    <div class="cont-result">
+        <div style="width: 100%; height: 10%; float: left; background-color: #FFFAFA; text-align: center">
+            <p class="p-titulo">Preços</p>
+        </div>
+    </div>
+    <div *ngIf="this.loaded" style="width: 100%">
+        <app-item-preco  [tipo]="'BTC'" [valor]="preco.BTC"></app-item-preco>
+        <app-item-preco  [tipo]="'USD'" [valor]="preco.USD"></app-item-preco>
+        <app-item-preco  [tipo]="'EUR'" [valor]="preco.EUR"></app-item-preco>
+    </div>
+    
+</div>

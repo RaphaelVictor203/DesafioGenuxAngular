@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background-color: #F8F8FF;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: black;
+    user-select: none;
+    text-decoration: none;
+    margin-top: 2.5vmin;
+    margin-bottom: 2.5vmin;
+  }
+  
+a:hover{
+    color: black;
+    font-weight: bold;
+}

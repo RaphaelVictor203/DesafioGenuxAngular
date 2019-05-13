@@ -1,0 +1,13 @@
+.p-feature{
+    width: 36vmin;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+    text-decoration: none;
+}
+
+.p-feature:hover{
+    background-color: #DCDCDC;
+    border-left: 2px solid #96C946;
+}
